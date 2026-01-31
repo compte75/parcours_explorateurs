@@ -18,8 +18,8 @@ build_explorateurs_paths = construire_les_chemins_des_explorateurs
 edges_df = dataframe_des_aretes
 
 """
-from explorator_path import ExploratorPath
-from edge import Edge
+from explorateurs_paths import ExploratorPath
+from edges import Edge
 
 
 import pandas
@@ -75,7 +75,7 @@ def build_explorators_paths(starting_nodes, dict_edges):
 
 
 if __name__ == "__main__":
-	edges_df = pandas.read_csv("./parcours_explorateurs.csv")
+	edges_df = pandas.read_csv("./parcours_explorateurs_completed.csv")
 
 	starting_nodes, dict_edges = prepare_data(edges_df)
 
